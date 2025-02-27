@@ -1,42 +1,30 @@
-# Brain Tumor Detection Using CNN
-This project is a deep learning-based approach to detecting brain tumors from MRI images using Convolutional Neural Networks (CNNs). The model is trained on a dataset of labeled MRI scans and classifies images into tumor (yes) and no tumor (no) categories.
+# 🧠 Brain Tumor Detection System
+📌 Overview
+The Brain Tumor Detection System is a deep learning-based model designed to classify MRI images into two categories:
+✔️ Tumor (Yes) – MRI scans showing a brain tumor.
+✔️ No Tumor (No) – Normal MRI scans without a tumor.
 
-📌 Features
-Preprocessing: Converts images to grayscale, resizes them, and applies histogram equalization for better contrast.
-Data Augmentation: Uses techniques like rotation, shifting, zooming, and flipping to improve model generalization.
-CNN Model: A sequential deep learning model with Convolutional, Pooling, Dropout, and Dense layers.
-Training & Validation: Splits the dataset into training and testing sets (80:20) for model evaluation.
-Visualization: Displays random test images with model predictions and confidence scores.
-Prediction Function: Allows classification of new MRI images.
+This project utilizes Convolutional Neural Networks (CNNs) to analyze MRI images and provide accurate predictions. It includes image preprocessing, model training, evaluation, and real-time predictions.
 
-📂 Dataset
-The dataset consists of MRI scan images categorized into:
+🔧 Technologies Used
+Python – For implementing the deep learning pipeline.
+TensorFlow/Keras – To build and train the CNN model.
+OpenCV – For image processing (grayscale conversion, resizing, histogram equalization).
+NumPy & Matplotlib – For data handling and visualization.
+Scikit-learn – For train-test splitting and performance evaluation.
 
-yes/ → Images containing brain tumors.
-no/ → Images without brain tumors.
+🚀 Features
+✅ Image Preprocessing – Converts MRI images to grayscale, resizes them, and normalizes pixel values.
+✅ Deep Learning Model – A CNN-based architecture with convolutional, pooling, dropout, and dense layers.
+✅ Data Augmentation – Uses techniques like rotation, zooming, flipping, and shifting to improve model accuracy.
+✅ Train & Test Split – Automatically divides the dataset (80% for training, 20% for testing).
+✅ Performance Evaluation – Calculates model accuracy and visualizes predictions.
+✅ Real-Time Prediction – Loads and classifies new MRI images with confidence scores.
 
-│── yes/  (Images with tumors)
-│── no/   (Images without tumors)
-Ensure the dataset is stored correctly before running the script.
+🔜 Future Improvements
+🔹 Web Application Deployment – Integrating the model with a Flask or FastAPI backend.
+🔹 Database Support – Storing MRI images and prediction results in a MySQL or MongoDB database.
+🔹 Advanced Architectures – Experimenting with ResNet, EfficientNet, or Transfer Learning for better accuracy.
+🔹 Mobile Application – Developing an Android/iOS app for real-time MRI scanning and predictions.
 
-🛠️ Installation & Setup
-1️⃣ Install Required Libraries
-Run the following command to install dependencies:
-pip install tensorflow numpy opencv-python matplotlib scikit-learn
-
-2️⃣ Clone the Repository
-git clone https://github.com/yourusername/brain-tumor-detection.git
-cd brain-tumor-detection
-
-3️⃣ Run the Project
-python brain_tumor_detection.py
-
-🖼️ Sample Predictions
-MRI Image	Prediction	Confidence
-Tumor	98.4%
-No Tumor	95.6%
-
-📌 Future Improvements
-Train on a larger dataset for better generalization.
-Experiment with different architectures like ResNet or MobileNet.
-Deploy the model using Flask or FastAPI for real-time detection.
+Let me know if you need any modifications! 🚀
